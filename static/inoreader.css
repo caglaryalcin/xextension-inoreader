@@ -2,7 +2,42 @@
 {
     #bigMarkAsRead
     {
-        padding: 30px;
+        padding: 5px 10px !important;
+        min-height: 0 !important;
+        height: auto !important;
+        line-height: 1.2 !important;
+        text-align: center;
+        font-size: inherit !important;
+    }
+
+    #bigMarkAsRead br
+    {
+        display: none;
+    }
+
+    #bigMarkAsRead .bigTick,
+    #bigMarkAsRead .markAllRead,
+    #bigMarkAsRead .jumpNext
+    {
+        display: block;
+    }
+
+    #bigMarkAsRead .bigTick
+    {
+        font-size: 30px !important;
+        line-height: 1 !important;
+    }
+
+    #bigMarkAsRead .markAllRead[style*="visibility: hidden"]
+    {
+        display: none;
+    }
+
+    #bigMarkAsRead .jumpNext
+    {
+        margin-top: 2px;
+        font-size: inherit !important;
+        line-height: 1.2;
     }
 
     /* Avoid the on-load flash: keep the reading area hidden until inoreader.js has
